@@ -6,5 +6,8 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="department" class="hello.Department">
         <property name="deptName" value="Information Technology"/>
     </bean>
-    <bean id="employee" class="hello.Employee" autowire="byName"></bean>
+    <bean id="employee" class="hello.Employee" autowire="byType">
+        <property name="eid" value="10"/>
+        <property name="ename" value="Initial name"/>
+    </bean>
 </beans>

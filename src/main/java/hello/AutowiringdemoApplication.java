@@ -12,6 +12,8 @@ public class AutowiringdemoApplication {
     ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
     Employee emp = context.getBean("employee", Employee.class);
+    emp.showEployeeDetails();
+
     emp.setEid(101);
     emp.setEname("Spring");
     emp.showEployeeDetails();

@@ -1,10 +1,13 @@
 package hello;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Employee {
   private int eid;
 
   private String ename;
 
+  @Autowired
   private Department department;
 
   public int getEid() {

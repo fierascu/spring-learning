@@ -1,5 +1,8 @@
 package hello;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Department {
   private String deptName;
 
